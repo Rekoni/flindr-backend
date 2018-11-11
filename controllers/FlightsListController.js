@@ -12,7 +12,7 @@ var getFlightsList = function(res) {
         return "ERROR: Could not get flights list!";
       }
 
-      var sortedFlightsList = sortJsonArray(flightsList, 'Price');
+      var sortedFlightsList = sortJsonArray(flightsList, 'DepartureDate');
       res.json(sortedFlightsList);
 
     });
